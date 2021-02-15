@@ -23,17 +23,20 @@ h1 {
   }
 
   #starshipcards {
-    height: 60%;
+    height: 30vh;
     width: 100%;
+    object-fit: cover;
   }
 
   #planetcards {
-    height: 75%;
+    height: 45vh;
     width: 100%;
+    object-fit: cover;
   }
 
   #charactercards {
-    height: 65%;
+    height: 45vh;
     width: 100%;
+    object-fit: cover;
   }
 }
