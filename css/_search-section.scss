@@ -1,0 +1,40 @@
+.search-section {
+  background-image: url("../img/hero-banner.jpg");
+  color: $textColor;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
+      .search-header {
+        nav img {
+          height: 35px;
+          margin: 10px;
+        }
+      }
+
+      #directory {
+        margin-top: 40vh;
+        margin-bottom: 30vh;
+        margin-left: 25vw;
+        margin-right: 35vw;
+
+        #search {
+          padding-top: 1vh;
+          padding-bottom: 1vh;
+        }
+      }
+
+      #directorylogo {
+      font-size: 65px;
+      text-align: center;
+      border-bottom: 5px solid white;
+      margin-bottom: 1vh;
+
+        img {
+          height: 12vh;
+          margin-bottom: 1vh;
+        }
+      }
+}
