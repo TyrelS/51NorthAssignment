@@ -1,0 +1,21 @@
+.characters-section {
+  text-align: center;
+  margin: 5%;
+
+  #character1, #character2, #character3, #character4 {
+    background-color: $cardBackgroundColor;
+    border-left: 5px solid $cardBorderColor;
+    border-bottom: 5px solid $cardBorderColor;
+    padding: 20px;
+
+    button {
+      float: right;
+      padding: 0;
+      border: none;
+      background: none;
+      text-decoration: underline;
+      font-weight: bold;
+      color: $primaryBtnColor;
+    }
+  }
+}

@@ -1,3 +1,39 @@
 @import './_variables.scss';
 @import './_search-section.scss';
+@import './_starships-section.scss';
+@import './_planets-section.scss';
+@import './_characters-section.scss';
 @import './_particles.scss';
+
+h1 {
+  text-decoration: underline;
+}
+
+* {
+  font-family: $mainTextFont;
+
+  button {
+    border: 0px;
+    background: $buttonBackgroundColor;
+  }
+
+  button:hover {
+    background: $buttonHoverBackgroundColor;
+    color: $buttonColor !important;
+  }
+
+  #starshipcards {
+    height: 60%;
+    width: 100%;
+  }
+
+  #planetcards {
+    height: 75%;
+    width: 100%;
+  }
+
+  #charactercards {
+    height: 65%;
+    width: 100%;
+  }
+}

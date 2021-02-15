@@ -1,0 +1,16 @@
+.starships-section {
+  text-align: center;
+  margin: 5%;
+
+  #starship1, #starship2, #starship3, #starship4, #starship5, #starship6 {
+    background-color: $cardBackgroundColor;
+    border-left: 5px solid $cardBorderColor;
+    border-bottom: 5px solid $cardBorderColor;
+    padding: 20px;
+
+    button {
+      float: right;
+      color: $primaryBtnColor;
+    }
+  }
+}

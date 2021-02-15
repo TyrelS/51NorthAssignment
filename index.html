@@ -12,11 +12,11 @@
   <body>
     <section class="search-section">
       <div class="particles">
-  <div class="particle particle--1"></div>
-  <div class="particle particle--2"></div>
-  <div class="particle particle--3"></div>
-  <div class="particle particle--4"></div>
-</div>
+        <div class="particle particle--1"></div>
+        <div class="particle particle--2"></div>
+        <div class="particle particle--3"></div>
+        <div class="particle particle--4"></div>
+      </div>
 
       <section class="search-header">
         <nav class="navbar bg-transparent">
@@ -53,234 +53,295 @@
         </div>
     </section>
 
-    <section class="characters-section">
-      <div id="characters">
-          <div id="character1">
-            Name: {{ character1.name }}<br>
-            Birth year: {{ character1.birth_year }}<br>
-            Gender: {{ character1.gender }}<br>
-            <button v-on:click="character1details.hidden = !character1details.hidden" type="button" name="button" id="btnCharacter1">Read more</button>
-              <div id="character1details" hidden>
-                Height: {{ character1.height }}<br>
-                Mass: {{ character1.mass }}<br>
-                Hair color: {{ character1.hair_color }}<br>
-                Skin color: {{ character1.skin_color }}<br>
-                Eye color: {{ character1.eye_color }}<br>
+    <section class="starships-section">
+      <div id="starships">
+          <h1>Popular Starships</h1>
+          <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <img id="starshipcards" src="./img/starships/starship-1.jpg" alt="">
+                  <div id="starship1">
+                    Name: {{ starship1.name }}<br>
+                    Model: {{ starship1.model }}<br>
+                    Cargo capacity: {{ starship1.cargo_capacity }}<br>
+                      <div id="starship1details" hidden>
+                        Manufacturer: {{ starship1.manufacturer }}<br>
+                        Cost in credits: {{ starship1.cost_in_credits }}<br>
+                        Length: {{ starship1.length }}<br>
+                        Max atmosphering speed: {{ starship1.max_atmosphering_speed }}<br>
+                        Crew: {{ starship1.crew }}<br>
+                        Passengers: {{ starship1.passengers }}<br>
+                        Consumables: {{ starship1.consumables }}<br>
+                        Hyperdrive rating: {{ starship1.hyperdrive_rating }}<br>
+                        MGLT: {{ starship1.MGLT }}<br>
+                        Starship Class: {{ starship1.starship_class }}<br>
+                      </div>
+                    <button v-on:click="starship1details.hidden = !starship1details.hidden" type="button" name="button" id="btnStarship1">Read more<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/></svg></i></button>
+                  </div><br>
+                </div>
+                <div class="col-sm">
+                  <img id="starshipcards" src="./img/starships/starship-2.jpg" alt="">
+                  <div id="starship2">
+                    Name: {{ starship2.name }}<br>
+                    Model: {{ starship2.model }}<br>
+                    Cargo capacity: {{ starship2.cargo_capacity }}<br>
+                      <div id="starship2details" hidden><br>
+                        Manufacturer: {{ starship2.manufacturer }}<br>
+                        Cost in credits: {{ starship2.cost_in_credits }}<br>
+                        Length: {{ starship2.length }}<br>
+                        Max atmosphering speed: {{ starship2.max_atmosphering_speed }}<br>
+                        Crew: {{ starship2.crew }}<br>
+                        Passengers: {{ starship2.passengers }}<br>
+                        Consumables: {{ starship2.consumables }}<br>
+                        Hyperdrive rating: {{ starship2.hyperdrive_rating }}<br>
+                        MGLT: {{ starship2.MGLT }}<br>
+                        Starship Class: {{ starship2.starship_class }}<br>
+                      </div>
+                    <button v-on:click="starship2details.hidden = !starship2details.hidden" type="button" name="button" id="btnStarship2">Read more<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/></svg></button>
+                  </div><br>
+                </div>
+                <div class="col-sm">
+                  <img id="starshipcards" src="./img/starships/starship-3.jpg" alt="">
+                  <div id="starship3">
+                    Name: {{ starship3.name }}<br>
+                    Model: {{ starship3.model }}<br>
+                    Cargo capacity: {{ starship3.cargo_capacity }}<br>
+                      <div id="starship3details" hidden>
+                        Manufacturer: {{ starship3.manufacturer }}<br>
+                        Cost in credits: {{ starship3.cost_in_credits }}<br>
+                        Length: {{ starship3.length }}<br>
+                        Max atmosphering speed: {{ starship3.max_atmosphering_speed }}<br>
+                        Crew: {{ starship3.crew }}<br>
+                        Passengers: {{ starship3.passengers }}<br>
+                        Consumables: {{ starship3.consumables }}<br>
+                        Hyperdrive rating: {{ starship3.hyperdrive_rating }}<br>
+                        MGLT: {{ starship3.MGLT }}<br>
+                        Starship Class: {{ starship3.starship_class }}<br>
+                      </div>
+                    <button v-on:click="starship3details.hidden = !starship3details.hidden" type="button" name="button" id="btnStarship3">Read more<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/></svg></button>
+                  </div><br>
+                </div>
               </div>
+            </div>
           </div><br>
-
-          <div id="character2">
-            Name: {{ character2.name }}<br>
-            Birth year: {{ character2.birth_year }}<br>
-            Gender: {{ character2.gender }}<br>
-            <button v-on:click="character2details.hidden = !character2details.hidden" type="button" name="button" id="btnCharacter2">Read more</button>
-              <div id="character2details" hidden>
-                Height: {{ character2.height }}<br>
-                Mass: {{ character2.mass }}<br>
-                Hair color: {{ character2.hair_color }}<br>
-                Skin color: {{ character2.skin_color }}<br>
-                Eye color: {{ character2.eye_color }}<br>
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <img id="starshipcards" src="./img/starships/starship-4.jpg" alt="">
+                    <div id="starship4">
+                      Name: {{ starship4.name }}<br>
+                      Model: {{ starship4.model }}<br>
+                      Cargo capacity: {{ starship4.cargo_capacity }}<br>
+                        <div id="starship4details" hidden>
+                          Manufacturer: {{ starship4.manufacturer }}<br>
+                          Cost in credits: {{ starship4.cost_in_credits }}<br>
+                          Length: {{ starship4.length }}<br>
+                          Max atmosphering speed: {{ starship4.max_atmosphering_speed }}<br>
+                          Crew: {{ starship4.crew }}<br>
+                          Passengers: {{ starship4.passengers }}<br>
+                          Consumables: {{ starship4.consumables }}<br>
+                          Hyperdrive rating: {{ starship4.hyperdrive_rating }}<br>
+                          MGLT: {{ starship4.MGLT }}<br>
+                          Starship Class: {{ starship4.starship_class }}<br>
+                        </div>
+                      <button v-on:click="starship4details.hidden = !starship4details.hidden" type="button" name="button" id="btnStarship4">Read more<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/></svg></button>
+                    </div></br>
+                  </div>
+                  <div class="col-sm">
+                  <img id="starshipcards" src="./img/starships/starship-5.jpg" alt="">
+                    <div id="starship5">
+                      Name: {{ starship5.name }}<br>
+                      Model: {{ starship5.model }}<br>
+                      Cargo capacity: {{ starship5.cargo_capacity }}<br>
+                        <div id="starship5details" hidden>
+                          Manufacturer: {{ starship5.manufacturer }}<br>
+                          Cost in credits: {{ starship5.cost_in_credits }}<br>
+                          Length: {{ starship5.length }}<br>
+                          Max atmosphering speed: {{ starship5.max_atmosphering_speed }}<br>
+                          Crew: {{ starship5.crew }}<br>
+                          Passengers: {{ starship5.passengers }}<br>
+                          Consumables: {{ starship5.consumables }}<br>
+                          Hyperdrive rating: {{ starship5.hyperdrive_rating }}<br>
+                          MGLT: {{ starship5.MGLT }}<br>
+                          Starship Class: {{ starship5.starship_class }}<br>
+                        </div>
+                      <button v-on:click="starship5details.hidden = !starship5details.hidden" type="button" name="button" id="btnStarship5">Read more<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/></svg></button>
+                    </div></br>
+                  </div>
+                  <div class="col-sm">
+                  <img id="starshipcards" src="./img/starships/starship-6.jpg" alt="">
+                    <div id="starship6">
+                      Name: {{ starship6.name }}<br>
+                      Model: {{ starship6.model }}<br>
+                      Cargo capacity: {{ starship6.cargo_capacity }}<br>
+                        <div id="starship6details" hidden>
+                          Manufacturer: {{ starship6.manufacturer }}<br>
+                          Cost in credits: {{ starship6.cost_in_credits }}<br>
+                          Length: {{ starship6.length }}<br>
+                          Max atmosphering speed: {{ starship6.max_atmosphering_speed }}<br>
+                          Crew: {{ starship6.crew }}<br>
+                          Passengers: {{ starship6.passengers }}<br>
+                          Consumables: {{ starship6.consumables }}<br>
+                          Hyperdrive rating: {{ starship6.hyperdrive_rating }}<br>
+                          MGLT: {{ starship6.MGLT }}<br>
+                          Starship Class: {{ starship6.starship_class }}<br>
+                        </div>
+                      <button v-on:click="starship6details.hidden = !starship6details.hidden" type="button" name="button" id="btnStarship6">Read more<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/></svg></button>
+                    </div></br>
+                  </div>
+                </div>
               </div>
-          </div><br>
-
-          <div id="character3">
-            Name: {{ character3.name }}<br>
-            Birth year: {{ character3.birth_year }}<br>
-            Gender: {{ character3.gender }}<br>
-            <button v-on:click="character3details.hidden = !character3details.hidden" type="button" name="button" id="btnCharacter3">Read more</button>
-              <div id="character3details" hidden>
-                Height: {{ character3.height }}<br>
-                Mass: {{ character3.mass }}<br>
-                Hair color: {{ character3.hair_color }}<br>
-                Skin color: {{ character3.skin_color }}<br>
-                Eye color: {{ character3.eye_color }}<br>
-              </div>
-          </div><br>
-
-          <div id="character4">
-            Name: {{ character4.name }}<br>
-            Birth year: {{ character4.birth_year }}<br>
-            Gender: {{ character4.gender }}<br>
-            <button v-on:click="character4details.hidden = !character4details.hidden" type="button" name="button" id="btnCharacter4">Read more</button>
-              <div id="character4details" hidden>
-                Height: {{ character4.height }}<br>
-                Mass: {{ character4.mass }}<br>
-                Hair color: {{ character4.hair_color }}<br>
-                Skin color: {{ character4.skin_color }}<br>
-                Eye color: {{ character4.eye_color }}<br>
-              </div>
-          </div><br>
       </div>
     </section>
 
     <section class="planets-section">
       <div id="planets">
-          <div id="planet1">
-            Name: {{ planet1.name }}<br>
-            Climate: {{ planet1.climate }}<br>
-            Population: {{ planet1.population }}<br>
-            <button v-on:click="planet1details.hidden = !planet1details.hidden" type="button" name="button" id="btnPlanet1">Read more</button>
-              <div id="planet1details" hidden>
-                Rotation period: {{ planet1.rotation_period }}<br>
-                Orbital period: {{ planet1.orbital_period }}<br>
-                Diameter: {{ planet1.diameter }}<br>
-                Gravity: {{ planet1.gravity }}<br>
-                Terrain: {{ planet1.terrain }}<br>
-                Surface water: {{ planet1.surface_water }}<br>
+        <h1>Popular Planets</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <img id="planetcards" src="./img/planets/planet-1.jpg" alt="">
+              <div id="planet1">
+                Name: {{ planet1.name }}<br>
+                Climate: {{ planet1.climate }}<br>
                 Population: {{ planet1.population }}<br>
-              </div>
-          </div><br>
-
-          <div id="planet2">
-            Name: {{ planet2.name }}<br>
-            Climate: {{ planet2.climate }}<br>
-            Population: {{ planet2.population }}<br>
-            <button v-on:click="planet2details.hidden = !planet2details.hidden" type="button" name="button" id="btnPlanet2">Read more</button>
-              <div id="planet2details" hidden>
-                Rotation period: {{ planet2.rotation_period }}<br>
-                Orbital period: {{ planet2.orbital_period }}<br>
-                Diameter: {{ planet2.diameter }}<br>
-                Gravity: {{ planet2.gravity }}<br>
-                Terrain: {{ planet2.terrain }}<br>
-                Surface water: {{ planet2.surface_water }}<br>
+                  <div id="planet1details" hidden>
+                    Rotation period: {{ planet1.rotation_period }}<br>
+                    Orbital period: {{ planet1.orbital_period }}<br>
+                    Diameter: {{ planet1.diameter }}<br>
+                    Gravity: {{ planet1.gravity }}<br>
+                    Terrain: {{ planet1.terrain }}<br>
+                    Surface water: {{ planet1.surface_water }}<br>
+                    Population: {{ planet1.population }}<br>
+                  </div>
+                <button v-on:click="planet1details.hidden = !planet1details.hidden" type="button" name="button" id="btnPlanet1">Read more<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/></svg></button>
+              </div><br>
+            </div>
+            <div class="col-sm">
+              <img id="planetcards" src="./img/planets/planet-2.jpg" alt="">
+              <div id="planet2">
+                Name: {{ planet2.name }}<br>
+                Climate: {{ planet2.climate }}<br>
                 Population: {{ planet2.population }}<br>
-              </div>
-          </div><br>
-
-          <div id="planet3">
-            Name: {{ planet3.name }}<br>
-            Climate: {{ planet3.climate }}<br>
-            Population: {{ planet3.population }}<br>
-            <button v-on:click="planet3details.hidden = !planet3details.hidden" type="button" name="button" id="btnPlanet3">Read more</button>
-              <div id="planet3details" hidden>
-                Rotation period: {{ planet3.rotation_period }}<br>
-                Orbital period: {{ planet3.orbital_period }}<br>
-                Diameter: {{ planet3.diameter }}<br>
-                Gravity: {{ planet3.gravity }}<br>
-                Terrain: {{ planet3.terrain }}<br>
-                Surface water: {{ planet3.surface_water }}<br>
+                  <div id="planet2details" hidden>
+                    Rotation period: {{ planet2.rotation_period }}<br>
+                    Orbital period: {{ planet2.orbital_period }}<br>
+                    Diameter: {{ planet2.diameter }}<br>
+                    Gravity: {{ planet2.gravity }}<br>
+                    Terrain: {{ planet2.terrain }}<br>
+                    Surface water: {{ planet2.surface_water }}<br>
+                    Population: {{ planet2.population }}<br>
+                  </div>
+                <button v-on:click="planet2details.hidden = !planet2details.hidden" type="button" name="button" id="btnPlanet2">Read more<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/></svg></button>
+              </div><br>
+            </div>
+            <div class="col-sm">
+              <img id="planetcards" src="./img/planets/planet-3.jpg" alt="">
+              <div id="planet3">
+                Name: {{ planet3.name }}<br>
+                Climate: {{ planet3.climate }}<br>
                 Population: {{ planet3.population }}<br>
-              </div>
-          </div><br>
+                  <div id="planet3details" hidden>
+                    Rotation period: {{ planet3.rotation_period }}<br>
+                    Orbital period: {{ planet3.orbital_period }}<br>
+                    Diameter: {{ planet3.diameter }}<br>
+                    Gravity: {{ planet3.gravity }}<br>
+                    Terrain: {{ planet3.terrain }}<br>
+                    Surface water: {{ planet3.surface_water }}<br>
+                    Population: {{ planet3.population }}<br>
+                  </div>
+                <button v-on:click="planet3details.hidden = !planet3details.hidden" type="button" name="button" id="btnPlanet3">Read more<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/></svg></button>
+              </div><br>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="starships-section">
-      <div id="starships">
-          <div id="starship1">
-            Name: {{ starship1.name }}<br>
-            Model: {{ starship1.model }}<br>
-            Cargo capacity: {{ starship1.cargo_capacity }}<br>
-            <button v-on:click="starship1details.hidden = !starship1details.hidden" type="button" name="button" id="btnStarship1">Read more</button>
-              <div id="starship1details" hidden>
-                Manufacturer: {{ starship1.manufacturer }}<br>
-                Cost in credits: {{ starship1.cost_in_credits }}<br>
-                Length: {{ starship1.length }}<br>
-                Max atmosphering speed: {{ starship1.max_atmosphering_speed }}<br>
-                Crew: {{ starship1.crew }}<br>
-                Passengers: {{ starship1.passengers }}<br>
-                Consumables: {{ starship1.consumables }}<br>
-                Hyperdrive rating: {{ starship1.hyperdrive_rating }}<br>
-                MGLT: {{ starship1.MGLT }}<br>
-                Starship Class: {{ starship1.starship_class }}<br>
-              </div>
-          </div><br>
-          </div><br>
-
-          <div id="starship2">
-            Name: {{ starship2.name }}<br>
-            Model: {{ starship2.model }}<br>
-            Cargo capacity: {{ starship2.cargo_capacity }}<br>
-            <button v-on:click="starship2details.hidden = !starship2details.hidden" type="button" name="button" id="btnStarship2">Read more</button>
-              <div id="starship2details" hidden>
-                Manufacturer: {{ starship2.manufacturer }}<br>
-                Cost in credits: {{ starship2.cost_in_credits }}<br>
-                Length: {{ starship2.length }}<br>
-                Max atmosphering speed: {{ starship2.max_atmosphering_speed }}<br>
-                Crew: {{ starship2.crew }}<br>
-                Passengers: {{ starship2.passengers }}<br>
-                Consumables: {{ starship2.consumables }}<br>
-                Hyperdrive rating: {{ starship2.hyperdrive_rating }}<br>
-                MGLT: {{ starship2.MGLT }}<br>
-                Starship Class: {{ starship2.starship_class }}<br>
-              </div>
-          </div><br>
-
-          <div id="starship3">
-            Name: {{ starship3.name }}<br>
-            Model: {{ starship3.model }}<br>
-            Cargo capacity: {{ starship3.cargo_capacity }}<br>
-            <button v-on:click="starship3details.hidden = !starship3details.hidden" type="button" name="button" id="btnStarship3">Read more</button>
-              <div id="starship3details" hidden>
-                Manufacturer: {{ starship3.manufacturer }}<br>
-                Cost in credits: {{ starship3.cost_in_credits }}<br>
-                Length: {{ starship3.length }}<br>
-                Max atmosphering speed: {{ starship3.max_atmosphering_speed }}<br>
-                Crew: {{ starship3.crew }}<br>
-                Passengers: {{ starship3.passengers }}<br>
-                Consumables: {{ starship3.consumables }}<br>
-                Hyperdrive rating: {{ starship3.hyperdrive_rating }}<br>
-                MGLT: {{ starship3.MGLT }}<br>
-                Starship Class: {{ starship3.starship_class }}<br>
-              </div>
-          </div><br>
-
-          <div id="starship4">
-            Name: {{ starship4.name }}<br>
-            Model: {{ starship4.model }}<br>
-            Cargo capacity: {{ starship4.cargo_capacity }}<br>
-            <button v-on:click="starship4details.hidden = !starship4details.hidden" type="button" name="button" id="btnStarship4">Read more</button>
-              <div id="starship4details" hidden>
-                Manufacturer: {{ starship4.manufacturer }}<br>
-                Cost in credits: {{ starship4.cost_in_credits }}<br>
-                Length: {{ starship4.length }}<br>
-                Max atmosphering speed: {{ starship4.max_atmosphering_speed }}<br>
-                Crew: {{ starship4.crew }}<br>
-                Passengers: {{ starship4.passengers }}<br>
-                Consumables: {{ starship4.consumables }}<br>
-                Hyperdrive rating: {{ starship4.hyperdrive_rating }}<br>
-                MGLT: {{ starship4.MGLT }}<br>
-                Starship Class: {{ starship4.starship_class }}<br>
-              </div>
-          </div></br>
-
-          <div id="starship5">
-            Name: {{ starship5.name }}<br>
-            Model: {{ starship5.model }}<br>
-            Cargo capacity: {{ starship5.cargo_capacity }}<br>
-            <button v-on:click="starship5details.hidden = !starship5details.hidden" type="button" name="button" id="btnStarship5">Read more</button>
-              <div id="starship5details" hidden>
-                Manufacturer: {{ starship5.manufacturer }}<br>
-                Cost in credits: {{ starship5.cost_in_credits }}<br>
-                Length: {{ starship5.length }}<br>
-                Max atmosphering speed: {{ starship5.max_atmosphering_speed }}<br>
-                Crew: {{ starship5.crew }}<br>
-                Passengers: {{ starship5.passengers }}<br>
-                Consumables: {{ starship5.consumables }}<br>
-                Hyperdrive rating: {{ starship5.hyperdrive_rating }}<br>
-                MGLT: {{ starship5.MGLT }}<br>
-                Starship Class: {{ starship5.starship_class }}<br>
-              </div>
-          </div></br>
-
-          <div id="starship6">
-            Name: {{ starship6.name }}<br>
-            Model: {{ starship6.model }}<br>
-            Cargo capacity: {{ starship6.cargo_capacity }}<br>
-            <button v-on:click="starship6details.hidden = !starship6details.hidden" type="button" name="button" id="btnStarship6">Read more</button>
-              <div id="starship6details" hidden>
-                Manufacturer: {{ starship6.manufacturer }}<br>
-                Cost in credits: {{ starship6.cost_in_credits }}<br>
-                Length: {{ starship6.length }}<br>
-                Max atmosphering speed: {{ starship6.max_atmosphering_speed }}<br>
-                Crew: {{ starship6.crew }}<br>
-                Passengers: {{ starship6.passengers }}<br>
-                Consumables: {{ starship6.consumables }}<br>
-                Hyperdrive rating: {{ starship6.hyperdrive_rating }}<br>
-                MGLT: {{ starship6.MGLT }}<br>
-                Starship Class: {{ starship6.starship_class }}<br>
-              </div>
-          </div></br>
+    <section class="characters-section">
+      <div id="characters">
+      <h1>Popular Characters</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <img id="charactercards" src="./img/characters/character-1.jpg" alt="">
+              <div id="character1">
+                Name: {{ character1.name }}<br>
+                Birth year: {{ character1.birth_year }}<br>
+                Gender: {{ character1.gender }}<br>
+                  <div id="character1details" hidden>
+                    Height: {{ character1.height }}<br>
+                    Mass: {{ character1.mass }}<br>
+                    Hair color: {{ character1.hair_color }}<br>
+                    Skin color: {{ character1.skin_color }}<br>
+                    Eye color: {{ character1.eye_color }}<br>
+                  </div>
+                <button v-on:click="character1details.hidden = !character1details.hidden" type="button" name="button" id="btnCharacter1">Read more</button>
+              </div><br>
+            </div>
+            <div class="col-sm">
+              <img id="charactercards" src="./img/characters/character-2.jpg" alt="">
+              <div id="character2">
+                Name: {{ character2.name }}<br>
+                Birth year: {{ character2.birth_year }}<br>
+                Gender: {{ character2.gender }}<br>
+                  <div id="character2details" hidden>
+                    Height: {{ character2.height }}<br>
+                    Mass: {{ character2.mass }}<br>
+                    Hair color: {{ character2.hair_color }}<br>
+                    Skin color: {{ character2.skin_color }}<br>
+                    Eye color: {{ character2.eye_color }}<br>
+                  </div>
+                <button v-on:click="character2details.hidden = !character2details.hidden" type="button" name="button" id="btnCharacter2">Read more</button>
+              </div><br>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <img id="charactercards" src="./img/characters/character-3.jpg" alt="">
+              <div id="character3">
+                Name: {{ character3.name }}<br>
+                Birth year: {{ character3.birth_year }}<br>
+                Gender: {{ character3.gender }}<br>
+                  <div id="character3details" hidden>
+                    Height: {{ character3.height }}<br>
+                    Mass: {{ character3.mass }}<br>
+                    Hair color: {{ character3.hair_color }}<br>
+                    Skin color: {{ character3.skin_color }}<br>
+                    Eye color: {{ character3.eye_color }}<br>
+                  </div>
+                <button v-on:click="character3details.hidden = !character3details.hidden" type="button" name="button" id="btnCharacter3">Read more</button>
+              </div><br>
+            </div>
+            <div class="col-sm">
+              <img id="charactercards" src="./img/characters/character-4.jpg" alt="">
+              <div id="character4">
+                Name: {{ character4.name }}<br>
+                Birth year: {{ character4.birth_year }}<br>
+                Gender: {{ character4.gender }}<br>
+                  <div id="character4details" hidden>
+                    Height: {{ character4.height }}<br>
+                    Mass: {{ character4.mass }}<br>
+                    Hair color: {{ character4.hair_color }}<br>
+                    Skin color: {{ character4.skin_color }}<br>
+                    Eye color: {{ character4.eye_color }}<br>
+                  </div>
+                <button v-on:click="character4details.hidden = !character4details.hidden" type="button" name="button" id="btnCharacter4">Read more</button>
+              </div><br>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
