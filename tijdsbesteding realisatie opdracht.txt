@@ -1,0 +1,11 @@
+11-02-2021 18:30 tot 19:30: Start opdracht, inlezen opdracht en Vue en Sass (1 uur)
+12-02-2021 12:00 tot 13:00: Aanmaken structuur applicatie, start ontwikkeling assignment en uitproberen Vue (1 uur)
+" "	   16:30 tot 17:30: " " (1 uur)
+13-02-2021 17:30 tot 18:00: Start ontwikkelen design assignment, uitproberen Sass (30 min)
+
+15-02-2021 15:00 tot 16:00: Verder uitwerken design (1 uur)
+" "	   17:30 tot 19:40: " " (+/- 2 uur)
+16-02-2021 13:30 tot 14:00: Verder uitwerken design (30 min)
+" "        15:00 tot 16:00: " " (1 uur)
+
+Totaal: 8 uur
