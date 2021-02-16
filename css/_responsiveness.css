@@ -1,0 +1,9 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .search-header nav img {
+    margin-left: 15vw !important;
+  }
+  #directory {
+    margin-left: -5vw !important;
+  }
+}
